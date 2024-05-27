@@ -13,6 +13,10 @@ public class Bc1Application {
 	public String test() {
 		return "Hello World !";
 	}
+	@GetMapping("/index")
+	public String index() {
+		return "index";
+	}
 	public static void main(String[] args) {
 		SpringApplication.run(Bc1Application.class, args);
 	}
